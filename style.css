@@ -71,6 +71,7 @@ h2 {
     cursor: pointer;
 }
 
+
 ul li{
     list-style: none;
     padding: 12px 8px 12px 50px;
@@ -79,9 +80,10 @@ ul li{
     cursor:pointer;
     user-select: none;
     position: relative;
-    word-wrap: break-word;
+    overflow-wrap:break-word;
     display:flex;
     align-items: center;
+    word-break: break-all;
 }
 
 ul li::before {
@@ -111,7 +113,7 @@ ul li.checked::before {
 
 ul li span {
     position: absolute;
-    right: 0px;
+    right: -20px;
     width:40px;
     height:40px;
     font-size:22px;
